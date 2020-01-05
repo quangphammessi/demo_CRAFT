@@ -27,7 +27,7 @@ import zipfile
 
 # from craft import CRAFT
 # from scar import SCAR
-from craft import CRAFT
+from scar_craft import CRAFT
 
 
 # os.environ["CUDA_VISIBLE_DEVICES"]= "2"
@@ -65,7 +65,7 @@ def str2bool(v):
 
 class ARGS_TEST:
     def __init__(self):
-        self.trained_model = 'weights/CRAFT_ic15_VGG_clr_266.pth'
+        self.trained_model = 'weights/CRAFT_ic15_SCAR_CRAFT_clr_256.pth'
         self.text_threshold = 0.7
         self.low_text = 0.4
         self.link_threshold = 0.4

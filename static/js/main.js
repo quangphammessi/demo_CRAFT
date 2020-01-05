@@ -57,11 +57,13 @@ $(document).ready(function () {
                 $('.loader').hide();
 
                 $('.image-result').show();
-                $('#imageResult').attr('src', '/static/result/res_' + data['image_name'])
+                $('#imageResult').attr('src', '/static/result/res_' + data['image_name'] + '.jpg')
+                $('#maskResult').attr('src', '/static/result/res_' + data['image_name'] + '_mask.jpg')
                 $('#imageResult').show();
+                $('#maskResult').show();
 
                 $('#result').fadeIn(600);
-                $('#result').text(' Result:  ' + data);
+                $('#result').text(' Result:  ');
                 console.log('Success!');
             },
         });

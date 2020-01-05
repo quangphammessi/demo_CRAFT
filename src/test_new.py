@@ -30,7 +30,7 @@ import zipfile
 from craft import CRAFT
 
 
-os.environ["CUDA_VISIBLE_DEVICES"]= "2"
+# os.environ["CUDA_VISIBLE_DEVICES"]= "2"
 
 
 from collections import OrderedDict
